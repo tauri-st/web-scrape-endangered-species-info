@@ -15,7 +15,7 @@ def get_categories(url):
   #select and extract category animals
   categories = soup.findall("dl")
   for category in categories:
-    categories.findall("dt")
+    category_name = categories.find("dt").get_text()
 
   # Return the data here
   return data
