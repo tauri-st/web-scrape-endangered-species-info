@@ -24,3 +24,5 @@ def get_categories(url):
   return data
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
+
+print(category_data)
