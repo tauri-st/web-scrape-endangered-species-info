@@ -22,6 +22,10 @@ def get_categories(url):
 
   return data
 
+#extract the class each animal belongs to
+def get_animal(url)
+  soup = get_soup(url)
+
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
 print(category_data)
