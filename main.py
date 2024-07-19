@@ -30,6 +30,9 @@ def get_animal(url):
   if !table:
     return "No class found!"
   rows = table.find_all("tr")
+  for row in rows:
+    if row.get_text() == "Class:":
+      animal_class = row.find("a").contents[0]
   
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
