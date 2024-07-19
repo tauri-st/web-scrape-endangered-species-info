@@ -20,7 +20,6 @@ def get_categories(url):
     #this key-value pair should match the dictionary value
     data[category_name] = category_animals
 
-  # Return the data here
   return data
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
