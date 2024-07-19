@@ -29,6 +29,7 @@ def get_animal(url):
   table = soup.find("table", {"class": "infobox biota"})
   if !table:
     return "No class found!"
+  rows = table.find_all("tr")
   
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
