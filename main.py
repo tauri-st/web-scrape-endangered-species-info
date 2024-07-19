@@ -27,11 +27,11 @@ def get_animal(url):
   soup = get_soup(url)
   #extract data from a table on the Honey Badger wiki article
   table = soup.find("table", {"class": "infobox biota"})
-  if !table:
+  if not table:
     return "No class found!"
   rows = table.find_all("tr")
   for row in rows:
-    if row.get_text() == "Class:":
+    if "Class:" in row.get_text():
       animal_class = row.find("a").contents[0]
   return animal_class
   
