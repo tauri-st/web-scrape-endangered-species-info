@@ -25,6 +25,9 @@ def get_categories(url):
 #extract the class each animal belongs to
 def get_animal(url):
   soup = get_soup(url)
+  #extract data from a table on the Honey Badger wiki article
+  table = soup.find("table")
+  
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
