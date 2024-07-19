@@ -13,6 +13,9 @@ def get_categories(url):
   soup = get_soup(url)
   data = {}
   #select and extract category animals
+  categories = soup.findall("dl")
+  for category in categories:
+    categories.findall("dt")
 
   # Return the data here
   return data
