@@ -17,6 +17,8 @@ def get_categories(url):
   for category in categories:
     category_name = categories.find("dt").get_text()
     category_animals = category.find_all("a")
+    #this key-value pair should match the dictionary value
+    data[category_name] = category_animals
 
   # Return the data here
   return data
