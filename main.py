@@ -26,7 +26,7 @@ def get_categories(url):
 def get_animal(url):
   soup = get_soup(url)
   #extract data from a table on the Honey Badger wiki article
-  table = soup.find("table")
+  table = soup.find("table", {"class": "infobox biota"})
   
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
