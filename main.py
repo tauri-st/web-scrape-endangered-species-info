@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+#holds the variables to gather data
 def get_soup(url):
   r = requests.get(url)
   r.raise_for_status()
@@ -11,7 +12,7 @@ def get_soup(url):
 def get_categories(url):
   soup = get_soup(url)
   data = {}
-  #ADD CODE - select and extract category animals here
+  #select and extract category animals
 
   # Return the data here
   return data
