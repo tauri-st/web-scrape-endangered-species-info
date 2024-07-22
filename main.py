@@ -40,6 +40,8 @@ def get_animal(url):
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
+collected_data = []
+
 for category in category_data:
   for animal in category_data[category]:
     animal_href = animal["href"]
