@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 #holds the variables to gather data
 def get_soup(url):
@@ -44,3 +45,4 @@ for category in category_data:
     animal_href = animal["href"]
     #print(animal_href)
     animal_class = get_animal(animal_href)
+    print(animal_class)
