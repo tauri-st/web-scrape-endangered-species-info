@@ -50,3 +50,10 @@ for category in category_data:
     #print(animal_name)
     animal_class = get_animal(animal_href)
     #print(animal_class)
+    if len(animal_name) > 3:
+      collected_data.append({
+        "Category": category,
+        "Animal": animal_name,
+        "Class": animal_class
+      })
+      #print(collected_data)
