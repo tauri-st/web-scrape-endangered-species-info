@@ -42,4 +42,5 @@ category_data = get_categories("https://skillcrush.github.io/web-scraping-endang
 for category in category_data:
   for animal in category_data[category]:
     animal_href = animal["href"]
-    print(animal_href)
+    #print(animal_href)
+    animal_class = get_animal(animal_href)
